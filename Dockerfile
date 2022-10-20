@@ -4,7 +4,7 @@ MAINTAINER cbpeckles
 # get stuff from the interwebs
 RUN yum -y install wget tar; yum clean all
 RUN mkdir /tmp/nagiosxi 
-RUN wget -qO- https://assets.nagios.com/downloads/nagiosxi/5/xi‑5.8.3.tar.gz
+RUN wget -qO-  https://assets.nagios.com/downloads/nagiosxi/xi-latest.tar.gz
 RUN tar xz -C /tmp    
 WORKDIR /tmp/nagiosxi
 
